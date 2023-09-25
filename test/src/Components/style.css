@@ -1,0 +1,73 @@
+.WhiteButton {
+    background-color: #ECF0F3;
+    border-radius: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 64px;
+    padding-right: 64px;
+    margin-top: 30px;           /* To be removed */
+    box-shadow: 4px #D1D9E6;
+    border: none;
+    filter: drop-shadow(-4px -4px 4px #FFF) drop-shadow(4px 4px 4px #D1D9E6);
+}
+
+.BlueButton {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 64px;
+    padding-right: 64px;
+    margin-top: 30px;           /* To be removed */
+    border-radius: 16px;
+    background: linear-gradient(90deg, #1758F1 0%, #36D8E0 100%);
+    box-shadow: 4px 4px 4px 0px #D1D9E6, -4px -4px 4px 0px #FFF;
+    border: none;
+    filter: drop-shadow(-4px -4px 4px #FFF) drop-shadow(4px 4px 4px #D1D9E6);
+}
+
+.IconButton {
+    background-color: #ECF0F3;
+    border-radius: 16px;
+    padding: 8px;
+    margin-top: 30px;           /* To be removed */
+    box-shadow: 4px #D1D9E6;
+    border: none;
+    filter: drop-shadow(-4px -4px 4px #FFF) drop-shadow(4px 4px 4px #D1D9E6);
+}
+
+.WhiteButtonText {
+    color: #808488;
+    font-size: 20px;
+    font-family: 'Century Gothic';
+    font-weight: bold;
+}
+
+.BlueButtonText {
+    color: #ECF0F3;
+    font-size: 20px;
+    font-family: 'Century Gothic';
+    font-weight: bold;
+}
+
+.TitleText {
+    color: #1C2323;
+    font-size: 20px;
+    font-family: 'Century Gothic';
+    font-weight: bold;
+    margin-top: 30px;           /* To be removed */
+}
+
+.SubtitleText {
+    color: #808488;
+    font-size: 14px;
+    font-family: 'Century Gothic';
+    font-weight: bold;
+    margin-top: 30px;           /* To be removed */
+}
+
+.PlaceholderText {
+    color: #929699;
+    font-size: 14px;
+    font-family: 'Century Gothic';
+    font-weight: italic;
+    margin-top: 30px;           /* To be removed */
+}
