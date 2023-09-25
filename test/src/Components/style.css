@@ -71,3 +71,59 @@
     font-weight: italic;
     margin-top: 30px;           /* To be removed */
 }
+
+.Input {
+    margin-top: 30px;           /* To be removed */
+}
+
+input {
+    color: #929699;
+    font-size: 14px;
+    font-family: 'Century Gothic';
+    font-weight: normal;
+    padding: 12px;
+    border-radius: 24px;
+    background: #ECF0F3;
+    box-shadow: -4px -4px 5px 0px #FFF inset, 4px 4px 5px 0px #D1D9E6 inset;
+    border: none;
+    width: 250px;
+}
+
+input::placeholder {
+    color: #929699;
+    font-size: 14px;
+    font-family: 'Century Gothic';
+    font-weight: italic;
+}
+
+input:focus {
+    outline: none;
+}
+
+.Error {
+    color: #F05050;
+    font-size: 14px;
+    font-family: 'Century Gothic';
+    font-weight: normal;
+}
+
+.DualContainer {
+    border-radius: 8px;
+    background: #ECF0F3;
+    box-shadow: -4px -4px 5px 0px #FFF, 4px 4px 5px 0px #D1D9E6;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: 76%;
+    margin-left: 5%;
+    text-align: left ;
+    margin-top: 30px;        /* To be removed */
+}
+
+.DualContainerText {
+    color: #6E7276;
+    font-family: Century Gothic;
+    font-size: 18px;
+    font-style: normal;
+}
