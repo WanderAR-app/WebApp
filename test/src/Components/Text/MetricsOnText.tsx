@@ -5,11 +5,11 @@ interface Props {
     children: ReactNode;
 }
 
-const PlaceholderText = ({children}: Props) => {
+const MetricsOnText = ({children}: Props) => {
     return (
-        <div className="PlaceholderText">
+        <div className="MetricsOnText">
             {children}
         </div>
     )
 }
-export default PlaceholderText;
+export default MetricsOnText;

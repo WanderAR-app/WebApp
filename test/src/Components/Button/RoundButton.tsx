@@ -6,11 +6,11 @@ interface Props {
     OnClick?: () => void;
 }
 
-const IconButton = ({children, OnClick}: Props) => {
+const RoundButton = ({children, OnClick}: Props) => {
     return (
-        <button className="IconButton" onClick={OnClick}>
+        <button className="RoundButton" onClick={OnClick}>
             {children}
         </button>
     )
 }
-export default IconButton;
+export default RoundButton;

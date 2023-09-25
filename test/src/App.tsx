@@ -12,6 +12,10 @@ import PlaceholderText from "./Components/Text/PlaceholderText";
 import InputText from "./Components/Input/InputText";
 import DualContainer from "./Components/Container/DualContainer";
 import DualContainerText from "./Components/Text/DualContainerText";
+import SwitchOnOff from "./Components/Switch/SwitchOnOff";
+import SwitchText from "./Components/Switch/SwitchText";
+import DualButton from "./Components/Button/DualButton";
+import RoundButton from "./Components/Button/RoundButton";
 
 function App() {
 
@@ -23,48 +27,47 @@ const handleOnChange = (e: ChangeEvent<HTMLInputElement>) => {
 
   return (
     <div className="App">
-      <div>
         <WhiteButton OnClick={() => {console.log("WhiteButton click")}}>
           <WhiteButtonText>
             SIGN UP
           </WhiteButtonText>
         </WhiteButton>
-      </div>
-      <div>
         <BlueButton OnClick={() => {console.log("BlueButton click")}}>
           <BlueButtonText>
             SIGN IN
           </BlueButtonText>
         </BlueButton>
-      </div>
-      <div>
         <IconButton OnClick={() => {console.log("IconButton click")}}>
           <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google" height={ 50 } />
         </IconButton>
-      </div>
-      <div>
         <TitleText>
           Title Text
         </TitleText>
-      </div>
-      <div>
         <SubtitleText>
           Subtitle Text
         </SubtitleText>
-      </div>
-      <div>
         <PlaceholderText>
           Placeholder Text
         </PlaceholderText>
-      </div>
-      <div>
         <InputText type="text" placeholder="password" label="password" value={value} error={false} name="name" onChange={handleOnChange} />
-      </div>
-      <div>
         <DualContainer>
-            <DualContainerText> Dual Container Text </DualContainerText> <button>Button</button>
+          <div style={{display: "flex"}}>
+            <DualContainerText> Dual Container </DualContainerText> <SwitchOnOff/>
+          </div>
         </DualContainer>
-      </div>
+        <DualContainer>
+          <div style={{display: "flex"}}>
+            <DualContainerText> Dual Container </DualContainerText> <SwitchText/>
+          </div>
+        </DualContainer>
+        <DualButton OnClick={() => {console.log("DualButton click")}}>
+          <DualContainerText>
+            Dual Button
+          </DualContainerText>
+        </DualButton>
+        <RoundButton OnClick={() => {console.log("RoundButton click")}}>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Croix" width={ 30 } height={ 30 } />
+        </RoundButton>
     </div>
   );
 }
