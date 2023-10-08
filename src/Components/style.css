@@ -267,3 +267,48 @@ input:focus {
   margin: 5%;
   margin-top: 30px; /* To be removed */
 }
+
+.BottomBarButtonUnselected {
+  border: none;
+  border-radius: 4px;
+  background: #ECF0F3;
+  box-shadow: -2px -2px 5px 0px #FFF, 2px 2px 5px 0px #D1D9E6;
+  padding: 8px;
+}
+
+.BottomBarButtonSelected {
+  border: none;
+  border-radius: 4px;
+  background: #ECF0F3;
+  box-shadow: -2px -2px 5px 0px #FFF inset, 2px 2px 5px 0px #D1D9E6 inset;
+  padding-top: 8px;
+  padding-right: 8px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+}
+
+.BottomBarTextSelected {
+  color: #6F7176;
+  text-align: center;
+  font-family: Century Gothic;
+  font-size: 10px;
+  font-style: normal;
+}
+
+.BottomBarTextUnselected {
+  color: #6F7176;
+  font-family: Century Gothic;
+  font-size: 10px;
+  font-style: normal;
+}
+
+.BottomBar {
+  display: flex;
+  flex-direction: row;
+  padding-top: 50px;
+  width: 100%;
+}
+
+.botbardiv {
+  width: 33vw;
+}

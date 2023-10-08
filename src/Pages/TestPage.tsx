@@ -22,6 +22,7 @@ import WhiteGlassMoButton from "../Components/Button/WhiteGlassMoButton";
 import BlueGlassMoText from "../Components/Text/BlueGlassMoText";
 import WhiteGlassMoText from "../Components/Text/WhiteGlassMoText";
 import { useEffect, useState } from "react";
+import BottomBar from "../Components/Button/BottomBar";
 
 export const TestPage = () => {
   const [value, setValue] = useState("");
@@ -122,6 +123,8 @@ export const TestPage = () => {
           <BlueGlassMoText>White Button</BlueGlassMoText>
         </WhiteGlassMoButton>
       </GlassMoContainer>
+
+      <BottomBar SelectedPage="Home"/>
     </div>
   );
 };
