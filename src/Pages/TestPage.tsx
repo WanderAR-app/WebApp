@@ -23,6 +23,10 @@ import BlueGlassMoText from "../Components/Text/BlueGlassMoText";
 import WhiteGlassMoText from "../Components/Text/WhiteGlassMoText";
 import { useEffect, useState } from "react";
 import BottomBar from "../Components/Button/BottomBar";
+import RoundButtonClicked from "../Components/Button/RoundButtonClicked";
+import DirectionContainer from "../Components/Container/DireactionContainer";
+import DirectionSmallText from "../Components/Text/DirectionSmallText";
+import DirectionBigText from "../Components/Text/DirectionBigText";
 
 export const TestPage = () => {
   const [value, setValue] = useState("");
@@ -124,7 +128,23 @@ export const TestPage = () => {
         </WhiteGlassMoButton>
       </GlassMoContainer>
 
-      <BottomBar SelectedPage="Home"/>
+      <BottomBar SelectedPage="Settings"/>
+      <RoundButtonClicked>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
+          alt="Croix"
+          width={30}
+          height={30}
+        />
+      </RoundButtonClicked>
+      <DirectionContainer>
+        <DirectionSmallText>
+          Dans 9 metres
+        </DirectionSmallText>
+        <DirectionBigText>
+          Tournez à droite
+        </DirectionBigText>
+      </DirectionContainer>
     </div>
   );
 };
