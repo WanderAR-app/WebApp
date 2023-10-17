@@ -21,7 +21,7 @@ import BlueGlassMoButton from "../Components/Button/BlueGlassMoButton";
 import WhiteGlassMoButton from "../Components/Button/WhiteGlassMoButton";
 import BlueGlassMoText from "../Components/Text/BlueGlassMoText";
 import WhiteGlassMoText from "../Components/Text/WhiteGlassMoText";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import BottomBar from "../Components/Button/BottomBar";
 import RoundButtonClicked from "../Components/Button/RoundButtonClicked";
 import DirectionContainer from "../Components/Container/DireactionContainer";
