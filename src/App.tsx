@@ -1,17 +1,20 @@
-import { ChangeEvent, useState } from "react";
-import React, { useEffect } from "react";
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import "./App.css";
 
 import { TestPage } from "./Pages/TestPage";
-import { AppRouter } from "./Router/AppRouter";
+import CguPage from './Pages/CguPage';
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <AppRouter />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<TestPage />} />
+        <Route path="/cgu" element={<CguPage />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;

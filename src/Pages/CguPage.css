@@ -1,0 +1,32 @@
+/* CguPage.css */
+.background-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    background-color: white;
+    opacity: 0.9;
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+  }
+  
+  .logo {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  p {
+    /* Styles pour le texte */
+  }
