@@ -27,6 +27,7 @@ import RoundButtonClicked from "../Components/Button/RoundButtonClicked";
 import DirectionContainer from "../Components/Container/DireactionContainer";
 import DirectionSmallText from "../Components/Text/DirectionSmallText";
 import DirectionBigText from "../Components/Text/DirectionBigText";
+import SettingContainer from "../Components/Container/SettingContainer";
 
 export const TestPage = () => {
   const [value, setValue] = useState("");
@@ -145,6 +146,18 @@ export const TestPage = () => {
           Tournez à droite
         </DirectionBigText>
       </DirectionContainer>
+      <SettingContainer
+        OnClick={() => {
+          console.log("SettingContainer click");
+        }}
+      >
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
+          alt="Google"
+          height={30}
+        />
+        <DualContainerText> Dual Container </DualContainerText>{" "}
+      </SettingContainer>
     </div>
   );
 };

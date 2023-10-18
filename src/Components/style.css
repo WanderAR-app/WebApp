@@ -364,3 +364,22 @@ input:focus {
   font-size: 24px;
   font-weight: bold;
 }
+
+.SettingContainer {
+  display: flex; /* Utiliser Flexbox pour aligner les éléments horizontalement */
+  align-items: center; /* Centrer verticalement les éléments enfants */
+  border-radius: 8px;
+  background: #ecf0f3;
+  box-shadow:
+    -4px -4px 5px 0px #fff,
+    4px 4px 5px 0px #d1d9e6;
+  padding: 12px 24px; /* Utiliser une seule propriété pour définir les marges */
+  width: 70%;
+  text-align: left;
+  margin-top: 30px; /* Pour être supprimé */
+}
+
+.SettingContainer img {
+  height: 30px;
+  margin-right: 10px; /* Espacement entre l'image et le texte */
+}
