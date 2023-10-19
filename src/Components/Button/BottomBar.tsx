@@ -17,7 +17,7 @@ const BottomBar = ({ SelectedPage }: Props) => {
         if (page === SelectedPage) {
             return (
                 <div className="botbardiv">
-                    <button className="BottomBarButtonSelected" onClick={() => {navigate("/login")}}>
+                    <button className="BottomBarButtonSelected" onClick={() => {navigate("/setting")}}>
                         <img src={srcSelected} alt={page}/>
                     </button>
                     <div className="BottomBarTextSelected">
@@ -28,7 +28,7 @@ const BottomBar = ({ SelectedPage }: Props) => {
         } else {
             return (
                 <div className="botbardiv">
-                    <button className="BottomBarButtonUnselected" onClick={() => {navigate("/login")}}>
+                    <button className="BottomBarButtonUnselected" onClick={() => {navigate("/")}}>
                         <img src={src} alt={page}/>
                     </button>
                     <div className="BottomBarTextUnselected">

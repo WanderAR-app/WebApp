@@ -1,60 +1,94 @@
 import React from 'react';
-import './CguPage.css';
+import './SettingPage.css';
 
-import GlassMoContainer from '../Components/Container/GlassMoContainer';
-import BlueGlassMoText from '../Components/Text/BlueGlassMoText';
-import WhiteGlassMoText from '../Components/Text/WhiteGlassMoText';
 import TitleText from '../Components/Text/TitleText';
-import ClassicText from '../Components/Text/ClassicText';
-import BlueGlassMoButton from '../Components/Button/BlueGlassMoButton';
-import WhiteGlassMoButton from '../Components/Button/WhiteGlassMoButton';
+import SettingContainer from '../Components/Container/SettingContainer';
+import DualContainerText from '../Components/Text/DualContainerText';
+import BottomBar from '../Components/Button/BottomBar';
 
-import logo from '../assets/WanderAR_Cgu.svg';
+import generalImage from '../assets/general.svg';
+import voixImage from '../assets/voix.svg';
+import navigationImage from '../assets/navigation.svg';
+import politiqueImage from '../assets/politique.svg';
+import proposImage from '../assets/propos.svg';
 
-const CguPage: React.FC = () => {
-
-  const handleAccept = () => {
-    window.location.href = '/';
-  };
-
-  const handleRefuse = () => {
-    window.close();
-  };
+const SettingPage: React.FC = () => {
 
   return (
     <div className="container">
-      <div className="logo-container">
-        <img src={logo} alt="Logo de WanderAR" />
+      <div className="titre">
+        <TitleText>Paramètres</TitleText>
       </div>
-      <div className="button-container">
-        <GlassMoContainer>
-          <div className="glass-container-cgu">
-            <div className="title-container">
-              <TitleText>Conditions générales<br />d’utilisation</TitleText>
-            </div>
-            <div className="texte-container">
-              <ClassicText>
-                <p>Wander AR est une application de guidage en intérieur disponible dans les bâtiments utilisant nos services.</p>
-                <p>Les conditions générales d’utilisation peuvent être changées à tout moment. Pour les consulter ou être notifié de tout changement, allez à Paramètres/Politique de confidentialité.</p>
-              </ClassicText>
-            </div>
-            <div className="button-row">
-              <div className="blue-button">
-                <BlueGlassMoButton OnClick={handleAccept}>
-                  <WhiteGlassMoText>Accepter</WhiteGlassMoText>
-                </BlueGlassMoButton>
-              </div>
-              <div className="white-button">
-                <WhiteGlassMoButton OnClick={handleRefuse}>
-                  <BlueGlassMoText>Refuser</BlueGlassMoText>
-                </WhiteGlassMoButton>
-              </div>
-            </div>
-          </div>
-        </GlassMoContainer>
+
+      <SettingContainer
+        OnClick={() => {
+          console.log("General click");
+        }}
+      >
+        <img
+          src={generalImage}
+          alt="General"
+          height={30}
+        />
+        <DualContainerText> Général </DualContainerText>{" "}
+      </SettingContainer>
+
+      <SettingContainer
+        OnClick={() => {
+          console.log("Voix click");
+        }}
+      >
+        <img
+          src={voixImage}
+          alt="Voix"
+          height={30}
+        />
+        <DualContainerText> Voix et sons </DualContainerText>{" "}
+      </SettingContainer>
+
+      <SettingContainer
+        OnClick={() => {
+          console.log("Navigation click");
+        }}
+      >
+        <img
+          src={navigationImage}
+          alt="Navigation"
+          height={30}
+        />
+        <DualContainerText> Navigation </DualContainerText>{" "}
+      </SettingContainer>
+
+      <SettingContainer
+        OnClick={() => {
+          console.log("Politique click");
+        }}
+      >
+        <img
+          src={politiqueImage}
+          alt="Politique de confidentialité"
+          height={30}
+        />
+        <DualContainerText> Politique de confidentialité </DualContainerText>{" "}
+      </SettingContainer>
+
+      <SettingContainer
+        OnClick={() => {
+          console.log("Propos click");
+        }}
+      >
+        <img
+          src={proposImage}
+          alt="A propos"
+          height={30}
+        />
+        <DualContainerText> A propos </DualContainerText>{" "}
+      </SettingContainer>
+      <div className="bottom-bar">
+        <BottomBar SelectedPage="Settings"/>
       </div>
     </div>
   );
 };
 
-export default CguPage;
+export default SettingPage;

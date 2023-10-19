@@ -22,6 +22,7 @@ const CguPage: React.FC = () => {
   };
 
   return (
+    <div className="cgu-page">
     <div className="container">
       <div className="logo-container">
         <img src={logo} alt="Logo de WanderAR" />
@@ -53,6 +54,7 @@ const CguPage: React.FC = () => {
           </div>
         </GlassMoContainer>
       </div>
+    </div>
     </div>
   );
 };
