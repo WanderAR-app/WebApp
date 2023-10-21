@@ -5,6 +5,7 @@ import { TestPage } from "../Pages/TestPage";
 import { LoginPage } from "../Pages/LoginPage";
 import { RegisterPage } from "../Pages/RegisterPage";
 import { SearchPage } from "../Pages/SearchPage";
+import { ArPage } from "../Pages/ArPage";
 
 export const BrowserRouter = createBrowserRouter([
   // base path route
@@ -30,6 +31,12 @@ export const BrowserRouter = createBrowserRouter([
   {
     path: "/search",
     element: <SearchPage />,
+    errorElement: <ErrorPage />
+  },
+
+  {
+    path: "/ar",
+    element: <ArPage />,
     errorElement: <ErrorPage />
   },
 
