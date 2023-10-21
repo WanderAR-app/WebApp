@@ -1,0 +1,26 @@
+.room-result {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+
+  border-radius: 8px;
+  background: #ecf0f3;
+  box-shadow: -4px -4px 5px 0px #fff, 4px 4px 5px 0px #d1d9e6;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  margin-top: 8px; /* To be removed */
+  cursor: pointer;
+}
+
+.right-arrow-pointer {
+  position: flex;
+}
+
+.search-result:hover {
+  background-color: #efefef;
+}
