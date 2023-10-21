@@ -1,6 +1,5 @@
 import { useContext, useEffect, useState } from "react";
 import { SearchBar } from "../Components/Input/Search/SearchBar";
-import { MicrophoneSearch } from "../Components/Input/Search/MicrophoneSearch";
 import { RoomVerticalList } from "../Components/List/RoomVerticalList";
 import { RoomHorizontalList } from "../Components/List/RoomHorizontalList";
 import { AppContext } from "../Context/AppContext";
@@ -19,7 +18,7 @@ export const SearchPage = () => {
   useEffect(() => {
     const favorites = rooms.filter((room: any) => room.userFavorite);
     setFavorites(favorites);
-  });
+  }, [rooms]);
 
   return (
     <div className="search-page">
