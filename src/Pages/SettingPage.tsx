@@ -61,7 +61,7 @@ const SettingPage: React.FC = () => {
 
       <SettingContainer
         OnClick={() => {
-          console.log("Politique click");
+          window.location.href = '/politique';
         }}
       >
         <img

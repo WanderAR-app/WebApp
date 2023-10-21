@@ -7,6 +7,7 @@ import { TestPage } from "./Pages/TestPage";
 import CguPage from './Pages/CguPage';
 import SettingPage from './Pages/SettingPage';
 import ProposPage from './Pages/ProposPage';
+import PolitiquePage from './Pages/PolitiquePage';
 
 const App: React.FC = () => {
   return (
@@ -15,6 +16,7 @@ const App: React.FC = () => {
         <Route path="/test" element={<TestPage />} />
         <Route path="/cgu" element={<CguPage />} />
         <Route path="/setting" element={<SettingPage />} />
+        <Route path="/politique" element={<PolitiquePage />} />
         <Route path="/propos" element={<ProposPage />} />
       </Routes>
     </Router>
