@@ -48,7 +48,7 @@ const SettingPage: React.FC = () => {
 
       <SettingContainer
         OnClick={() => {
-          console.log("Navigation click");
+          window.location.href = '/navigation';
         }}
       >
         <img

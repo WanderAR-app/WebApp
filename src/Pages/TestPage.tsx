@@ -29,6 +29,7 @@ import DirectionSmallText from "../Components/Text/DirectionSmallText";
 import DirectionBigText from "../Components/Text/DirectionBigText";
 import SettingContainer from "../Components/Container/SettingContainer";
 import ClassicTextTitle from "../Components/Text/ClassicTextTitle";
+import DetailText from "../Components/Text/DetailText";
 
 export const TestPage = () => {
   const [value, setValue] = useState("");
@@ -65,6 +66,7 @@ export const TestPage = () => {
         />
       </IconButton>
       <TitleText>Title Text</TitleText>
+      <DetailText>Detail Text</DetailText>
       <SubtitleText>Subtitle Text</SubtitleText>
       <PlaceholderText>Placeholder Text</PlaceholderText>
       <InputText

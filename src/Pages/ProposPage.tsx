@@ -65,9 +65,9 @@ const ProposPage: React.FC = () => {
             </div>
           </div>
         </GlassMoContainer>
-        <div className="bottom-bar">
-          <BottomBar SelectedPage="Settings"/>
-        </div>
+      </div>
+      <div className="bottom-bar">
+        <BottomBar SelectedPage="Settings"/>
       </div>
     </div>
   );
