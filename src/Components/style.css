@@ -217,6 +217,14 @@ input:focus {
   font-style: italic;
 }
 
+.ClassicTextTitle {
+  color: #1c2323;
+  font-family: Century Gothic;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: bold;
+}
+
 .WhiteGlassMoText {
   color: #ecf0f3;
   text-align: center;

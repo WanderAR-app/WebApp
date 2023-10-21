@@ -16,46 +16,47 @@
   min-height: 100vh;
 }
 
-.logo-container {
+.logo-container-cgu {
   text-align: center;
   position: relative;
-  margin-top: -100px;
+  margin-top: -10%;
 }
 
-.button-container {
+.button-container-cgu {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 80%;
+  width: 80%;
+  max-width: 400px;
   margin: 0 auto;
 }
 
 .glass-container-cgu {
-  width: 342px;
+  width: 80vw;
   height: 454px;
   top: 195px;
-  left: 24px;
+  left: 5vw;
   overflow-y: auto;
 }
 
-.title-container {
+.title-container-cgu {
   text-align: center;
 }
 
-.texte-container {
+.texte-container-cgu {
   line-height: 1.5;
   padding: 10px;
   text-align: left;
 }
 
-.button-row {
+.button-row-cgu {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.blue-button,
-.white-button {
+.blue-button-cgu,
+.white-button-cgu {
   flex: 1;
   margin: 2px 0;
 }

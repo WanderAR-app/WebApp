@@ -16,7 +16,7 @@ const SettingPage: React.FC = () => {
 
   return (
     <div className="container">
-      <div className="titre">
+      <div className="titre-setting">
         <TitleText>Paramètres</TitleText>
       </div>
 
@@ -74,7 +74,7 @@ const SettingPage: React.FC = () => {
 
       <SettingContainer
         OnClick={() => {
-          console.log("Propos click");
+          window.location.href = '/propos';
         }}
       >
         <img

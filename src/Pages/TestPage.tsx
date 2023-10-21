@@ -28,6 +28,7 @@ import DirectionContainer from "../Components/Container/DireactionContainer";
 import DirectionSmallText from "../Components/Text/DirectionSmallText";
 import DirectionBigText from "../Components/Text/DirectionBigText";
 import SettingContainer from "../Components/Container/SettingContainer";
+import ClassicTextTitle from "../Components/Text/ClassicTextTitle";
 
 export const TestPage = () => {
   const [value, setValue] = useState("");
@@ -106,6 +107,9 @@ export const TestPage = () => {
         />
       </RoundButton>
       <GlassMoContainer>
+        <ClassicTextTitle>
+          Notre Concept Unique
+        </ClassicTextTitle>
         <ClassicText>
           Wander AR est une application de guidage en intérieur disponible dans
           les bâtiments utilisant nos services. Les conditions générales
