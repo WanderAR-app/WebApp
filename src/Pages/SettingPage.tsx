@@ -12,7 +12,7 @@ import navigationImage from '../assets/navigation.svg';
 import politiqueImage from '../assets/politique.svg';
 import proposImage from '../assets/propos.svg';
 
-const SettingPage: React.FC = () => {
+export const SettingPage = () => {
 
   return (
     <div className="container">

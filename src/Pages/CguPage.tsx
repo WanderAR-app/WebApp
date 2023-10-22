@@ -11,7 +11,7 @@ import WhiteGlassMoButton from '../Components/Button/WhiteGlassMoButton';
 
 import logo from '../assets/WanderAR_Cgu.svg';
 
-const CguPage: React.FC = () => {
+export const CguPage = () => {
 
   const handleAccept = () => {
     window.location.href = '/';

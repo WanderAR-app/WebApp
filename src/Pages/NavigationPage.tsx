@@ -11,7 +11,7 @@ import BottomBar from '../Components/Button/BottomBar';
 
 import backImage from '../assets/retour.svg';
 
-const NavigationPage: React.FC = () => {
+export const NavigationPage = () => {
 
   return (
     <div className="container">

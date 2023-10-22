@@ -12,7 +12,7 @@ import SwitchMultiChoice from "../Components/Switch/SwitchMultiChoice";
 
 import backImage from '../assets/retour.svg';
 
-const VoixPage: React.FC = () => {
+export const VoixPage = () => {
 
   return (
     <div className="container">

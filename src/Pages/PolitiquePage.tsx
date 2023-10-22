@@ -10,7 +10,7 @@ import BottomBar from '../Components/Button/BottomBar';
 
 import backImage from '../assets/retour.svg';
 
-const PolitiquePage: React.FC = () => {
+export const PolitiquePage = () => {
 
   return (
     <div className="container">

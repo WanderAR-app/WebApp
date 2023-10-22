@@ -10,7 +10,7 @@ import BottomBar from '../Components/Button/BottomBar';
 
 import backImage from '../assets/retour.svg';
 
-const ProposPage: React.FC = () => {
+export const ProposPage = () => {
 
   return (
     <div className="container">

@@ -12,7 +12,7 @@ import SwitchMultiChoice from "../Components/Switch/SwitchMultiChoice";
 
 import backImage from '../assets/retour.svg';
 
-const GeneralPage: React.FC = () => {
+export const GeneralPage = () => {
 
   return (
     <div className="container">

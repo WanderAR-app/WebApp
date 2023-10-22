@@ -1,32 +1,13 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-
 import "./App.css";
 
-import { TestPage } from "./Pages/TestPage";
-import CguPage from './Pages/CguPage';
-import SettingPage from './Pages/SettingPage';
-import GeneralPage from './Pages/GeneralPage';
-import VoixPage from './Pages/VoixPage';
-import NavigationPage from './Pages/NavigationPage';
-import PolitiquePage from './Pages/PolitiquePage';
-import ProposPage from './Pages/ProposPage';
+import { AppRouter } from "./Router/AppRouter";
 
-const App: React.FC = () => {
+function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/test" element={<TestPage />} />
-        <Route path="/cgu" element={<CguPage />} />
-        <Route path="/setting" element={<SettingPage />} />
-        <Route path="/general" element={<GeneralPage />} />
-        <Route path="/voix" element={<VoixPage />} />
-        <Route path="/navigation" element={<NavigationPage />} />
-        <Route path="/politique" element={<PolitiquePage />} />
-        <Route path="/propos" element={<ProposPage />} />
-      </Routes>
-    </Router>
+    <div className="App">
+      <AppRouter />
+    </div>
   );
-};
+}
 
 export default App;
