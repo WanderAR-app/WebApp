@@ -8,7 +8,6 @@ interface Props {
 const BottomBar = ({ SelectedPage }: Props) => {
     const navigate = useNavigate();
 
-    
     const getButton = (page: string) => {
 
         const src: string = `/${page}.svg`;
@@ -17,7 +16,7 @@ const BottomBar = ({ SelectedPage }: Props) => {
         if (page === SelectedPage) {
             return (
                 <div className="botbardiv">
-                    <button className="BottomBarButtonSelected" onClick={() => {navigate("/setting")}}>
+                    <button className="BottomBarButtonSelected" onClick={() => {navigate("/login")}}>
                         <img src={srcSelected} alt={page}/>
                     </button>
                     <div className="BottomBarTextSelected">
@@ -28,7 +27,7 @@ const BottomBar = ({ SelectedPage }: Props) => {
         } else {
             return (
                 <div className="botbardiv">
-                    <button className="BottomBarButtonUnselected" onClick={() => {navigate("/")}}>
+                    <button className="BottomBarButtonUnselected" onClick={() => {navigate("/login")}}>
                         <img src={src} alt={page}/>
                     </button>
                     <div className="BottomBarTextUnselected">
