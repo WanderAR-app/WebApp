@@ -35,7 +35,7 @@ const SettingPage: React.FC = () => {
 
       <SettingContainer
         OnClick={() => {
-          console.log("Voix click");
+          window.location.href = '/voix';
         }}
       >
         <img

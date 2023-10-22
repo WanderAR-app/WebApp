@@ -3,20 +3,20 @@
     min-height: 100vh;
 }
 
-.button-back-navigation {
+.button-back-voix {
     position: absolute;
     top: 2%;
     left: 5%;
 }
 
-.titre-navigation {
+.titre-voix {
     position: absolute;
     top: 3%;
     left: 50%;
     transform: translateX(-50%);
 }
 
-.detail-navigation {
+.detail-voix {
     position: absolute;
     top: calc(4% + 2.5rem);
     left: 20%;
@@ -24,10 +24,30 @@
     max-width: 90%;
 }
 
-.container-navigation {
+.container-voix {
     position: absolute;
     width: 100%;
     top: 15%;
+    left: 10%;
+    max-width: 100%;
+}
+
+.container-text-voix {
+    margin-left: -1%;
+}
+
+.detail-2-voix {
+    position: absolute;
+    left: 23%;
+    transform: translateX(-50%);
+    max-width: 90%;
+    top: 30%;
+}
+
+.container-2-voix {
+    position: absolute;
+    width: 100%;
+    top: 35%;
     left: 10%;
     max-width: 100%;
 }

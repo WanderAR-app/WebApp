@@ -30,6 +30,7 @@ import DirectionBigText from "../Components/Text/DirectionBigText";
 import SettingContainer from "../Components/Container/SettingContainer";
 import ClassicTextTitle from "../Components/Text/ClassicTextTitle";
 import DetailText from "../Components/Text/DetailText";
+import SwitchMultiChoice from "../Components/Switch/SwitchMultiChoice";
 
 export const TestPage = () => {
   const [value, setValue] = useState("");
@@ -164,6 +165,12 @@ export const TestPage = () => {
         />
         <DualContainerText> Dual Container </DualContainerText>{" "}
       </SettingContainer>
+      <DualContainer>
+        <div style={{ display: "flex" }}>
+          <DualContainerText>Dual Button</DualContainerText>
+          <SwitchMultiChoice options={['Option 1', 'Option 2', 'Option 3']} />
+        </div>
+      </DualContainer>
     </div>
   );
 };
