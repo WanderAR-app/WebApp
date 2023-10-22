@@ -4,6 +4,7 @@ import "../style.css";
 
 interface Props {}
 
+// eslint-disable-next-line
 const SwitchOnOff = ({}: Props) => {
   const [checked, setChecked] = useState(false);
   const handleChange = (bool: SetStateAction<boolean>) => {

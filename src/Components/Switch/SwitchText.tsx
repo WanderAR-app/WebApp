@@ -6,6 +6,7 @@ import MetricsOffText from "./../Text/MetricsOffText";
 
 interface Props {}
 
+// eslint-disable-next-line
 const SwitchText = ({}: Props) => {
   const [checked, setChecked] = useState(false);
   const handleChange = (bool: SetStateAction<boolean>) => {
