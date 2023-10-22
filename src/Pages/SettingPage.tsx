@@ -22,7 +22,7 @@ const SettingPage: React.FC = () => {
 
       <SettingContainer
         OnClick={() => {
-          console.log("General click");
+          window.location.href = '/general';
         }}
       >
         <img

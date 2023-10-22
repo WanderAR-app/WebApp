@@ -1,0 +1,29 @@
+.container {
+    position: relative;
+    min-height: 100vh;
+}
+
+.button-back-general {
+    position: absolute;
+    top: 2%;
+    left: 5%;
+}
+
+.titre-general {
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.container-general {
+    position: absolute;
+    width: 100%;
+    top: 15%;
+    left: 10%;
+    max-width: 100%;
+}
+
+.bottom-bar {
+    text-align: center;
+}

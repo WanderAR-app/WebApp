@@ -6,6 +6,7 @@ import "./App.css";
 import { TestPage } from "./Pages/TestPage";
 import CguPage from './Pages/CguPage';
 import SettingPage from './Pages/SettingPage';
+import GeneralPage from './Pages/GeneralPage';
 import VoixPage from './Pages/VoixPage';
 import NavigationPage from './Pages/NavigationPage';
 import PolitiquePage from './Pages/PolitiquePage';
@@ -18,6 +19,7 @@ const App: React.FC = () => {
         <Route path="/test" element={<TestPage />} />
         <Route path="/cgu" element={<CguPage />} />
         <Route path="/setting" element={<SettingPage />} />
+        <Route path="/general" element={<GeneralPage />} />
         <Route path="/voix" element={<VoixPage />} />
         <Route path="/navigation" element={<NavigationPage />} />
         <Route path="/politique" element={<PolitiquePage />} />
