@@ -40,7 +40,7 @@ export const TestPage = () => {
   };
 
   return (
-    <div>
+    <div className="test-page">
       <WhiteButton
         OnClick={() => {
           console.log("WhiteButton click");
