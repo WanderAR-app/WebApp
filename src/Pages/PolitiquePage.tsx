@@ -13,8 +13,8 @@ import backImage from '../assets/retour.svg';
 export const PolitiquePage = () => {
 
   return (
-    <div className="container">
-      <div className="button-back-politque">
+    <div className="container" style={{ overflow: 'hidden' }}>
+      <div className="button-back-politique">
         <RoundButton
           OnClick={() => {
             window.location.href = '/setting';
@@ -28,12 +28,12 @@ export const PolitiquePage = () => {
           />
         </RoundButton>
       </div>
-      <div className="titre-politque">
+      <div className="titre-politique">
         <TitleText>Politique de confidentialité</TitleText>
       </div>
-      <div className="button-container-politque">
+      <div className="button-container-politique">
         <GlassMoContainer>
-          <div className="glass-container-politque">
+          <div className="glass-container-politique">
             <div className="texte-container-politque">
               <ClassicText>
                 <p>Chez WanderAR, nous accordons une grande importance à la protection de la vie privée de nos utilisateurs et nous nous engageons à protéger les informations personnelles qu'ils nous confient. Cette politique décrit les types d'informations que nous collectons, comment nous les utilisons et les mesures de sécurité que nous mettons en place pour les protéger.</p>
@@ -66,7 +66,7 @@ export const PolitiquePage = () => {
           </div>
         </GlassMoContainer>
       </div>
-      <div className="bottom-bar">
+      <div className="bottom-bar-politique">
         <BottomBar SelectedPage="Settings"/>
       </div>
     </div>

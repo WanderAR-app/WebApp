@@ -13,7 +13,7 @@ import backImage from '../assets/retour.svg';
 export const ProposPage = () => {
 
   return (
-    <div className="container">
+    <div className="container" style={{ overflow: 'hidden' }}>
       <div className="button-back-propos">
         <RoundButton
           OnClick={() => {
@@ -66,7 +66,7 @@ export const ProposPage = () => {
           </div>
         </GlassMoContainer>
       </div>
-      <div className="bottom-bar">
+      <div className="bottom-bar-propos">
         <BottomBar SelectedPage="Settings"/>
       </div>
     </div>

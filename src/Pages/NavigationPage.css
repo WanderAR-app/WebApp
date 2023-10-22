@@ -32,6 +32,9 @@
     max-width: 100%;
 }
 
-.bottom-bar {
+.bottom-bar-navigation {
+    position: fixed;
+    bottom: 20px;
+    left: 0;
     text-align: center;
 }

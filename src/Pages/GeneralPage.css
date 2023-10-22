@@ -1,3 +1,7 @@
+body {
+    overflow: hidden;
+}
+
 .container {
     position: relative;
     min-height: 100vh;
@@ -24,6 +28,9 @@
     max-width: 100%;
 }
 
-.bottom-bar {
+.bottom-bar-general {
+    position: fixed;
+    bottom: 10px;
+    left: 0;
     text-align: center;
 }

@@ -84,7 +84,7 @@ export const SettingPage = () => {
         />
         <DualContainerText> A propos </DualContainerText>{" "}
       </SettingContainer>
-      <div className="bottom-bar">
+      <div className="bottom-bar-setting">
         <BottomBar SelectedPage="Settings"/>
       </div>
     </div>

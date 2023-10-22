@@ -1,51 +1,53 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
-.button-back-politque {
-    position: fixed;
-    top: 15px;
-    left: 25px;
-    z-index: 1
+.button-back-politique {
+  position: absolute;
+  top: 2%;
+  left: 5%;
+  z-index: 1
 }
 
-.titre-politque {
-    margin-top: -25px;
-    z-index: 1
+.titre-politique {
+  margin-top: -45px;
+  z-index: 1;
+  margin-left: 30px;
 }
 
-.button-container-politque {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 80%;
-    max-width: 400px;
-    margin: 0 auto;
+.button-container-politique {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: -20px;
 }
 
-.glass-container-politque {
-    width: 90vw;
-    height: 700px;
-    top: 195px;
-    left: 5vw;
-    overflow-y: auto;
-    margin-top: -20px;
+.glass-container-politique {
+  width: 90vw;
+  height: 700px;
+  top: 195px;
+  left: 5vw;
+  overflow-y: auto;
+  margin-top: -20px;
 }
 
-.texte-container-politque {
-    line-height: 1.5;
-    padding: 10px;
-    text-align: left;
-    margin-top: -30px;
+.texte-container-politique {
+  line-height: 1.5;
+  padding: 10px;
+  text-align: left;
+  margin-top: -30px;
 }
 
-.bottom-bar {
-    position: fixed;
-    bottom: 20px;
-    left: 0;
-    text-align: center;
+.bottom-bar-politique {
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  text-align: center;
 }

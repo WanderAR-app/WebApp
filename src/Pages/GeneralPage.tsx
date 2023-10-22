@@ -15,7 +15,7 @@ import backImage from '../assets/retour.svg';
 export const GeneralPage = () => {
 
   return (
-    <div className="container">
+    <div className="container" style={{ overflow: 'hidden' }}>
       <div className="button-back-general">
         <RoundButton
           OnClick={() => {
@@ -52,7 +52,7 @@ export const GeneralPage = () => {
           </div>
         </DualContainer>
       </div>
-      <div className="bottom-bar">
+      <div className="bottom-bar-general">
         <BottomBar SelectedPage="Settings"/>
       </div>
     </div>
