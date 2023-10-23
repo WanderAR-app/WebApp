@@ -29,6 +29,7 @@ export const SettingPage = () => {
           src={generalImage}
           alt="General"
           height={30}
+          width={30}
         />
         <DualContainerText> Général </DualContainerText>{" "}
       </SettingContainer>

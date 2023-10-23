@@ -1,32 +1,56 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { useState } from "react";
+import { useEffect } from "react";
 
 import "./App.css";
 
-import { TestPage } from "./Pages/TestPage";
-import CguPage from './Pages/CguPage';
-import SettingPage from './Pages/SettingPage';
-import GeneralPage from './Pages/GeneralPage';
-import VoixPage from './Pages/VoixPage';
-import NavigationPage from './Pages/NavigationPage';
-import PolitiquePage from './Pages/PolitiquePage';
-import ProposPage from './Pages/ProposPage';
+import { AppRouter } from "./Router/AppRouter";
+import { AppContextIF, Location } from "./Interfaces/AppContext.interface";
+import { AppContext } from "./Context/AppContext";
+import { RoomList } from "./Types/Rooms";
 
-const App: React.FC = () => {
+function App() {
+  const [lang, setLang] = useState({
+    current: "fr-FR",
+    default: "fr-FR",
+  });
+
+  const [location, setLocation] = useState<Location>({
+    rooms: [],
+    name: "",
+  });
+
+  const appDefaultContext: AppContextIF = {
+    appLang: { lang, setLang },
+    appLoc: { location, setLocation },
+  };
+
+  useEffect(() => {
+    // create random rooms
+    const rooms: RoomList = [];
+    for (let i = 0; i < 10; i++) {
+      rooms.push({
+        name: `Room ${i}`,
+        id: i,
+        locationId: 1,
+        tileId: 1,
+        posX: 0,
+        posY: 0,
+        geometry: "",
+        userFavorite: (i % 2) === 0,
+        imageURL: `https://picsum.photos/1600/1200?random=${i}`,
+      });
+    }
+    setLocation({
+      rooms,
+      name: "test",
+    });
+  }, []);
+
   return (
-    <Router>
-      <Routes>
-        <Route path="/test" element={<TestPage />} />
-        <Route path="/cgu" element={<CguPage />} />
-        <Route path="/setting" element={<SettingPage />} />
-        <Route path="/general" element={<GeneralPage />} />
-        <Route path="/voix" element={<VoixPage />} />
-        <Route path="/navigation" element={<NavigationPage />} />
-        <Route path="/politique" element={<PolitiquePage />} />
-        <Route path="/propos" element={<ProposPage />} />
-      </Routes>
-    </Router>
+    <AppContext.Provider value={appDefaultContext}>
+      <AppRouter />
+    </AppContext.Provider>
   );
-};
+}
 
 export default App;
