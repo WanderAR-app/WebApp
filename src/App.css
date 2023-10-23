@@ -1,9 +1,9 @@
 .App {
-  text-align: center;
-  align-items: center;
-  background-color: #ecf0f3;
-  height: 500vh;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-}
+    text-align: center;
+    align-items: center;
+    background-color: #ecf0f3;
+    height: 500vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }

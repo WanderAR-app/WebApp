@@ -5,6 +5,14 @@ import { TestPage } from "../Pages/TestPage";
 import { LoginPage } from "../Pages/LoginPage";
 import { RegisterPage } from "../Pages/RegisterPage";
 import { SearchPage } from "../Pages/SearchPage";
+import { CguPage } from "../Pages/CguPage";
+import { SettingPage } from "../Pages/SettingPage";
+import { GeneralPage } from "../Pages/GeneralPage";
+import { VoixPage } from "../Pages/VoixPage";
+import { NavigationPage } from "../Pages/NavigationPage";
+import { PolicyPage } from "../Pages/PolicyPage";
+import { ProposPage } from "../Pages/ProposPage";
+import { HomePage } from "../Pages/HomePage";
 
 export const BrowserRouter = createBrowserRouter([
   // base path route
@@ -55,5 +63,53 @@ export const BrowserRouter = createBrowserRouter([
   {
     path: "*",
     element: <ErrorPage />,
+  },
+
+  // CGU page route
+  {
+    path: "/cgu",
+    element: <CguPage />,
+  },
+
+  // Setting page route
+  {
+    path: "/setting",
+    element: <SettingPage />,
+  },
+
+  // General page route
+  {
+    path: "/general",
+    element: <GeneralPage />,
+  },
+
+  // Voix page route
+  {
+    path: "/voix",
+    element: <VoixPage />,
+  },
+
+  // Navigation page route
+  {
+    path: "/navigation",
+    element: <NavigationPage />,
+  },
+
+  // Politique page route
+  {
+    path: "/politique",
+    element: <PolicyPage />,
+  },
+
+  // Propos page route
+  {
+    path: "/propos",
+    element: <ProposPage />,
+  },
+
+  // Home page route
+  {
+    path: "/home",
+    element: <HomePage />,
   },
 ]);

@@ -1,0 +1,40 @@
+.container {
+    position: relative;
+    min-height: 100vh;
+}
+
+.button-back-navigation {
+    position: absolute;
+    top: 2%;
+    left: 9%;
+}
+
+.title-navigation {
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.detail-navigation {
+    position: absolute;
+    top: calc(4% + 2.5rem);
+    left: 22%;
+    transform: translateX(-50%);
+    max-width: 90%;
+}
+
+.container-navigation {
+    position: absolute;
+    width: 100%;
+    top: 15%;
+    left: 10%;
+    max-width: 100%;
+}
+
+.bottom-bar-navigation {
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    text-align: center;
+}
