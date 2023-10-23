@@ -23,13 +23,20 @@
   width: 80%;
   max-width: 400px;
   margin: 0 auto;
-  margin-top: 490px;
+  margin-top: 410px;
 }
 
 .glass-container-home {
   width: 100vw;
-  height: 390px;
+  height: 490px;
   top: 195px;
   left: 5vw;
   overflow-y: auto;
+}
+
+.hidden-button {
+  background-color: white;
+  border: none;
+  width: 100%;
+  display: flex;
 }

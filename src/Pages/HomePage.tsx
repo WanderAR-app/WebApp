@@ -8,7 +8,8 @@ import BottomBar from '../Components/Button/BottomBar';
 import { RoomVerticalList } from "../Components/List/RoomVerticalList";
 import { RoomHorizontalList } from "../Components/List/RoomHorizontalList";
 import { AppContext } from "../Context/AppContext";
-
+import TitleText from '../Components/Text/TitleText';
+import { useNavigate } from 'react-router-dom';
 
 export const HomePage = () => {
 
@@ -18,6 +19,11 @@ export const HomePage = () => {
 
   const [results, setResults] = useState<RoomList>([]);
   const [favorites, setFavorites] = useState<RoomList>([]);
+
+  const navigate = useNavigate();
+  const handleSearchBarClick = () => {
+    navigate('/search'); // Redirige vers la page searchPage
+  };
 
   useEffect(() => {
     const favorites = rooms.filter((room: any) => room.userFavorite);
@@ -31,7 +37,9 @@ export const HomePage = () => {
           <WhiteContainer>
             <div className="glass-container-home">
               <div className="search-bar-container">
-                <SearchBar setResults={setResults} type={"back"} />
+                <button className="hidden-button" onClick={handleSearchBarClick}>
+                  <SearchBar setResults={setResults} type={"back"} />
+                </button>
               </div>
               <div className="result-container">
                 {results && results.length > 0 && (
@@ -41,21 +49,21 @@ export const HomePage = () => {
                   (results.length === 0 && (
                     <div className="empty-search">
                       <div className="favorites-container">
-                        <h1>Favoris</h1>
+                        <TitleText>Favoris</TitleText>
                         <div className="favorites-list">
                           <RoomHorizontalList roomList={favorites} />
                         </div>
                       </div>
                       <div className="recent-container">
-                        <h1>Historique</h1>
+                        <TitleText>Historique</TitleText>
                         <RoomHorizontalList roomList={rooms} />
                       </div>
-                      <div className="trending-container">
+                      {/* <div className="trending-container">
                         <h1>Suggestions</h1>
                         <div className="trending-list">
                           <RoomVerticalList roomList={rooms} />
                         </div>
-                      </div>
+                      </div> */}
                     </div>
                   ))}
               </div>
