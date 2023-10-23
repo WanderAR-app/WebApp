@@ -1,5 +1,5 @@
 import { FC, ChangeEvent } from "react";
-import "../style.css";
+import "./InputText.css";
 
 interface Props {
   type: "text" | "number" | "email" | "password";

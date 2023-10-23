@@ -11,3 +11,24 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/* File: font.css */
+@font-face {
+  font-family: "CenturyGothic";
+  src: url("./Fonts/CenturyGothic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "CenturyGothicBold";
+  src: url("./Fonts/CenturyGothicBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "CenturyGothicBoldItalic";
+  src: url("./Fonts/CenturyGothicBoldItalic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "CenturyGothicItalic";
+  src: url("./Fonts/CenturyGothicItalic.otf") format("opentype");
+}
