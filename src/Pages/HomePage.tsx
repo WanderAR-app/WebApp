@@ -58,19 +58,13 @@ export const HomePage = () => {
                         <TitleText>Historique</TitleText>
                         <RoomHorizontalList roomList={rooms} />
                       </div>
-                      {/* <div className="trending-container">
-                        <h1>Suggestions</h1>
-                        <div className="trending-list">
-                          <RoomVerticalList roomList={rooms} />
-                        </div>
-                      </div> */}
                     </div>
                   ))}
               </div>
             </div>
           </WhiteContainer>
         </div>
-        <div className="bottom-bar-navigation">
+        <div className="bottom-bar-home">
           <BottomBar SelectedPage="Home"/>
         </div>
       </div>
