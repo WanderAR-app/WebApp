@@ -10,7 +10,7 @@ import { SettingPage } from "../Pages/SettingPage";
 import { GeneralPage } from "../Pages/GeneralPage";
 import { VoixPage } from "../Pages/VoixPage";
 import { NavigationPage } from "../Pages/NavigationPage";
-import { PolitiquePage } from "../Pages/PolitiquePage";
+import { PolicyPage } from "../Pages/PolicyPage";
 import { ProposPage } from "../Pages/ProposPage";
 import { HomePage } from "../Pages/HomePage";
 
@@ -98,7 +98,7 @@ export const BrowserRouter = createBrowserRouter([
   // Politique page route
   {
     path: "/politique",
-    element: <PolitiquePage />,
+    element: <PolicyPage />,
   },
 
   // Propos page route

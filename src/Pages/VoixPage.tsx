@@ -30,7 +30,7 @@ export const VoixPage = () => {
           />
         </RoundButton>
       </div>
-      <div className="titre-voix">
+      <div className="title-voix">
         <TitleText>Voix et sons</TitleText>
       </div>
       <div className="detail-voix">

@@ -29,7 +29,7 @@ export const NavigationPage = () => {
           />
         </RoundButton>
       </div>
-      <div className="titre-navigation">
+      <div className="title-navigation">
         <TitleText>Navigation</TitleText>
       </div>
       <div className="detail-navigation">

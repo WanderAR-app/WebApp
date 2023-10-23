@@ -16,7 +16,7 @@ export const SettingPage = () => {
 
   return (
     <div className="container">
-      <div className="titre-setting">
+      <div className="title-setting">
         <TitleText>Paramètres</TitleText>
       </div>
 

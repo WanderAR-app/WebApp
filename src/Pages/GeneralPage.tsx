@@ -25,12 +25,10 @@ export const GeneralPage = () => {
           <img
             src={backImage}
             alt="Back"
-            // width={30}
-            // height={30}
           />
         </RoundButton>
       </div>
-      <div className="titre-general">
+      <div className="title-general">
         <TitleText>Général</TitleText>
       </div>
       <div className="container-general">

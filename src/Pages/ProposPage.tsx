@@ -28,7 +28,7 @@ export const ProposPage = () => {
           />
         </RoundButton>
       </div>
-      <div className="titre-propos">
+      <div className="title-propos">
         <TitleText>Notes et à propos</TitleText>
       </div>
       <div className="button-container-propos">
