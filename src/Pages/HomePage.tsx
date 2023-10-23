@@ -10,11 +10,6 @@ import { RoomHorizontalList } from "../Components/List/RoomHorizontalList";
 import { AppContext } from "../Context/AppContext";
 import TitleText from '../Components/Text/TitleText';
 import { useNavigate } from 'react-router-dom';
-import GlassMoContainer from '../Components/Container/GlassMoContainer';
-import DetailText from '../Components/Text/DetailText';
-
-import fovorisImage from '../assets/favoris.svg';
-import historiqueImage from '../assets/historique.svg';
 
 export const HomePage = () => {
 
@@ -37,13 +32,7 @@ export const HomePage = () => {
 
   return (
     <div className="home-page">
-      <div className="container">
-        <div className="title-container-home">
-          <GlassMoContainer>
-            <DetailText>Bienvenue à</DetailText>
-            <TitleText>Epitech</TitleText>
-          </GlassMoContainer>
-        </div>
+      <div className="container" style={{ overflow: 'hidden' }}>
         <div className="button-container-home">
           <WhiteContainer>
             <div className="glass-container-home">
@@ -59,27 +48,17 @@ export const HomePage = () => {
                 {!results ||
                   (results.length === 0 && (
                     <div className="empty-search">
-                      <div style={{ display: 'flex', alignItems: 'center'}}>
+                      <div className="favorites-container">
                         <TitleText>Favoris</TitleText>
-                        <img
-                          src={fovorisImage}
-                          alt="Favoris"
-                          style={{ width: '25px', height: '23px', marginLeft: '5px', marginBottom: '-25px'}}
-                        />
-                      </div>
-                      <div className="favorites-list">
-                        <RoomHorizontalList roomList={favorites} />
-                      </div>
-                        <div style={{ display: 'flex', alignItems: 'center'}}>
-                          <TitleText>Historique</TitleText>
-                          <img
-                            src={historiqueImage}
-                            alt="Historique"
-                            style={{ width: '25px', height: '23px', marginLeft: '5px', marginBottom: '-25px'}}
-                          />
+                        <div className="favorites-list">
+                          <RoomHorizontalList roomList={favorites} />
                         </div>
+                      </div>
+                      <div className="recent-container">
+                        <TitleText>Historique</TitleText>
                         <RoomHorizontalList roomList={rooms} />
                       </div>
+                    </div>
                   ))}
               </div>
             </div>

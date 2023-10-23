@@ -16,14 +16,6 @@
   min-height: 100vh;
 }
 
-.title-container-home {
-  width: 50vw;
-  height: 35vh;
-  overflow-y: auto;
-  margin-top: -50vh;
-  text-align: center;
-}
-
 .button-container-home {
   position: fixed;
   bottom: 0;
