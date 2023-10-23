@@ -13,7 +13,7 @@ import { useNavigate } from "react-router-dom";
 import GlassMoContainer from "../Components/Container/GlassMoContainer";
 import DetailText from "../Components/Text/DetailText";
 
-import fovorisImage from "../assets/favoris.svg";
+import favorisImage from "../assets/favoris.svg";
 import historiqueImage from "../assets/historique.svg";
 
 export const HomePage = () => {
@@ -63,7 +63,7 @@ export const HomePage = () => {
                     <div className="empty-search">
                       <div className="title-home">
                         <TitleText>Favoris</TitleText>
-                        <img src={fovorisImage} alt="Favoris" />
+                        <img src={favorisImage} alt="Favoris" />
                       </div>
                       <div className="favorites-list">
                         <RoomHorizontalList roomList={favorites} />
