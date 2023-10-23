@@ -22,7 +22,7 @@ export const HomePage = () => {
 
   const navigate = useNavigate();
   const handleSearchBarClick = () => {
-    navigate('/search'); // Redirige vers la page searchPage
+    navigate('/search');
   };
 
   useEffect(() => {
