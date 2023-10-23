@@ -1,7 +1,7 @@
 .home-page {
   margin: 0;
   padding: 0;
-  background-image: url('../assets/back.svg');
+  background-image: url("../assets/back.svg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -51,6 +51,20 @@
   border: none;
   width: 100%;
   display: flex;
+}
+
+.title-home {
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.title-home img {
+  width: 25px;
+  height: 23px;
+  margin-left: 5px;
+  margin-bottom: -23px; /* Adjust this value for proper alignment */
 }
 
 .bottom-bar-home {
