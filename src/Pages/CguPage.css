@@ -18,18 +18,23 @@
 
 .logo-container-cgu {
   text-align: center;
-  position: relative;
-  margin-top: -24%;
-  margin-bottom: 10%;
+  position: fixed;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .button-container-cgu {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 80%;
-  max-width: 400px;
+  width: 5%;
+  max-width: -10px;
   margin: 0 auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .glass-container-cgu {
