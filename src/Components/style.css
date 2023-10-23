@@ -344,11 +344,6 @@
   margin-top: 30px; /* Pour être supprimé */
 }
 
-.SettingContainer img {
-  height: 30px;
-  width: 30px;
-}
-
 .SwitchMultiChoiceContainer {
   display: flex;
   flex-direction: column;
