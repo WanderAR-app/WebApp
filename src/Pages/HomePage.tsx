@@ -61,34 +61,16 @@ export const HomePage = () => {
                 {!results ||
                   (results.length === 0 && (
                     <div className="empty-search">
-                      <div style={{ display: "flex", alignItems: "center" }}>
+                      <div className="title-home">
                         <TitleText>Favoris</TitleText>
-                        <img
-                          src={fovorisImage}
-                          alt="Favoris"
-                          style={{
-                            width: "25px",
-                            height: "23px",
-                            marginLeft: "5px",
-                            marginBottom: "-25px",
-                          }}
-                        />
+                        <img src={fovorisImage} alt="Favoris" />
                       </div>
                       <div className="favorites-list">
                         <RoomHorizontalList roomList={favorites} />
                       </div>
-                      <div style={{ display: "flex", alignItems: "center" }}>
+                      <div className="title-home">
                         <TitleText>Historique</TitleText>
-                        <img
-                          src={historiqueImage}
-                          alt="Historique"
-                          style={{
-                            width: "25px",
-                            height: "23px",
-                            marginLeft: "5px",
-                            marginBottom: "-25px",
-                          }}
-                        />
+                        <img src={historiqueImage} alt="Historique" />
                       </div>
                       <RoomHorizontalList roomList={rooms} />
                     </div>
