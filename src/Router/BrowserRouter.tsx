@@ -12,6 +12,7 @@ import { VoixPage } from "../Pages/VoixPage";
 import { NavigationPage } from "../Pages/NavigationPage";
 import { PolitiquePage } from "../Pages/PolitiquePage";
 import { ProposPage } from "../Pages/ProposPage";
+import { HomePage } from "../Pages/HomePage";
 
 export const BrowserRouter = createBrowserRouter([
   // base path route
@@ -104,5 +105,11 @@ export const BrowserRouter = createBrowserRouter([
   {
     path: "/propos",
     element: <ProposPage />,
+  },
+
+  // Home page route
+  {
+    path: "/home",
+    element: <HomePage />,
   },
 ]);

@@ -14,7 +14,7 @@ import logo from '../assets/WanderAR_Cgu.svg';
 export const CguPage = () => {
 
   const handleAccept = () => {
-    window.location.href = '/';
+    window.location.href = '/home';
   };
 
   const handleRefuse = () => {
