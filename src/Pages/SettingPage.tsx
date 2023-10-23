@@ -9,7 +9,7 @@ import BottomBar from '../Components/Button/BottomBar';
 import generalImage from '../assets/general.svg';
 import voixImage from '../assets/voix.svg';
 import navigationImage from '../assets/navigation.svg';
-import politiqueImage from '../assets/politique.svg';
+import policyImage from '../assets/policy.svg';
 import proposImage from '../assets/propos.svg';
 
 export const SettingPage = () => {
@@ -28,10 +28,9 @@ export const SettingPage = () => {
         <img
           src={generalImage}
           alt="General"
-          height={30}
-          width={30}
+          style={{ width: '25px', height: '25px' }}
         />
-        <DualContainerText> Général </DualContainerText>{" "}
+        <DualContainerText> Général </DualContainerText>
       </SettingContainer>
 
       <SettingContainer
@@ -42,9 +41,9 @@ export const SettingPage = () => {
         <img
           src={voixImage}
           alt="Voix"
-          height={30}
+          style={{ width: '25px', height: '23px' }}
         />
-        <DualContainerText> Voix et sons </DualContainerText>{" "}
+        <DualContainerText> Voix et sons </DualContainerText>
       </SettingContainer>
 
       <SettingContainer
@@ -55,9 +54,9 @@ export const SettingPage = () => {
         <img
           src={navigationImage}
           alt="Navigation"
-          height={30}
+          style={{ width: '25px', height: '25px' }}
         />
-        <DualContainerText> Navigation </DualContainerText>{" "}
+        <DualContainerText> Navigation </DualContainerText>
       </SettingContainer>
 
       <SettingContainer
@@ -66,13 +65,12 @@ export const SettingPage = () => {
         }}
       >
         <img
-          src={politiqueImage}
+          src={policyImage}
           alt="Politique de confidentialité"
-          height={30}
+          style={{ width: '23px', height: '25px' }}
         />
-        <DualContainerText> Politique de confidentialité </DualContainerText>{" "}
+        <DualContainerText> Politique de confidentialité </DualContainerText>
       </SettingContainer>
-
       <SettingContainer
         OnClick={() => {
           window.location.href = '/propos';
@@ -81,10 +79,11 @@ export const SettingPage = () => {
         <img
           src={proposImage}
           alt="A propos"
-          height={30}
+          style={{ width: '25px', height: '25px' }}
         />
-        <DualContainerText> A propos </DualContainerText>{" "}
+        <DualContainerText> A propos </DualContainerText>
       </SettingContainer>
+
       <div className="bottom-bar-setting">
         <BottomBar SelectedPage="Settings"/>
       </div>
