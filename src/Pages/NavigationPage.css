@@ -6,7 +6,7 @@
 .button-back-navigation {
     position: absolute;
     top: 2%;
-    left: 5%;
+    left: 9%;
 }
 
 .titre-navigation {
@@ -19,7 +19,7 @@
 .detail-navigation {
     position: absolute;
     top: calc(4% + 2.5rem);
-    left: 20%;
+    left: 22%;
     transform: translateX(-50%);
     max-width: 90%;
 }

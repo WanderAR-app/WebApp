@@ -163,6 +163,8 @@
   border: none;
   padding: 8px;
   margin-top: 30px; /* To be removed */
+  width: 42px;
+  height: 42px;
 }
 
 .ClassicText {
@@ -344,7 +346,7 @@
 
 .SettingContainer img {
   height: 30px;
-  margin-right: 10px;
+  width: 30px;
 }
 
 .SwitchMultiChoiceContainer {

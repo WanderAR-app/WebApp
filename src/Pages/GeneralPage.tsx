@@ -25,8 +25,8 @@ export const GeneralPage = () => {
           <img
             src={backImage}
             alt="Back"
-            width={30}
-            height={30}
+            // width={30}
+            // height={30}
           />
         </RoundButton>
       </div>
