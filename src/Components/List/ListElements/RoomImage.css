@@ -11,7 +11,23 @@
   height: 100%;
   object-fit: cover;
   border-radius: 8px;
+  min-height: 95px;
+  min-width: 123px;
   /* filter: grayscale(0.8); */
+}
+
+@media (max-width: 600px) {
+  .image-container {
+    max-width: 33.33%;
+    min-width: 33.33%;
+  }
+}
+
+@media (max-width: 400px) {
+  .image-container {
+    max-width: 50%;
+    min-width: 50%;
+  }
 }
 
 img {
