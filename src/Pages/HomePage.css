@@ -1,7 +1,7 @@
 .home-page {
   margin: 0;
   padding: 0;
-  background-image: url('../assets/back.svg');
+  background-image: url("../assets/back.svg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -14,6 +14,14 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+}
+
+.title-container-home {
+  width: 50vw;
+  height: 35vh;
+  overflow-y: auto;
+  margin-top: -50vh;
+  text-align: center;
 }
 
 .button-container-home {

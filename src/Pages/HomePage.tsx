@@ -1,18 +1,22 @@
 import { useContext, useEffect, useState } from "react";
-import './HomePage.css';
+import "./HomePage.css";
 
-import WhiteContainer from '../Components/Container/WhiteContainer';
+import WhiteContainer from "../Components/Container/WhiteContainer";
 import { SearchBar } from "../Components/Input/Search/SearchBar";
 import { RoomList } from "../Types/Rooms";
-import BottomBar from '../Components/Button/BottomBar';
+import BottomBar from "../Components/Button/BottomBar";
 import { RoomVerticalList } from "../Components/List/RoomVerticalList";
 import { RoomHorizontalList } from "../Components/List/RoomHorizontalList";
 import { AppContext } from "../Context/AppContext";
-import TitleText from '../Components/Text/TitleText';
-import { useNavigate } from 'react-router-dom';
+import TitleText from "../Components/Text/TitleText";
+import { useNavigate } from "react-router-dom";
+import GlassMoContainer from "../Components/Container/GlassMoContainer";
+import DetailText from "../Components/Text/DetailText";
+
+import fovorisImage from "../assets/favoris.svg";
+import historiqueImage from "../assets/historique.svg";
 
 export const HomePage = () => {
-
   const { appLoc } = useContext(AppContext);
   const { location } = appLoc;
   const { rooms } = location;
@@ -22,7 +26,7 @@ export const HomePage = () => {
 
   const navigate = useNavigate();
   const handleSearchBarClick = () => {
-    navigate('/search');
+    navigate("/search");
   };
 
   useEffect(() => {
@@ -32,12 +36,21 @@ export const HomePage = () => {
 
   return (
     <div className="home-page">
-      <div className="container" style={{ overflow: 'hidden' }}>
+      <div className="container">
+        <div className="title-container-home">
+          <GlassMoContainer>
+            <DetailText>Bienvenue à</DetailText>
+            <TitleText>Epitech</TitleText>
+          </GlassMoContainer>
+        </div>
         <div className="button-container-home">
           <WhiteContainer>
             <div className="glass-container-home">
               <div className="search-bar-container">
-                <button className="hidden-button" onClick={handleSearchBarClick}>
+                <button
+                  className="hidden-button"
+                  onClick={handleSearchBarClick}
+                >
                   <SearchBar setResults={setResults} type={"back"} />
                 </button>
               </div>
@@ -48,16 +61,36 @@ export const HomePage = () => {
                 {!results ||
                   (results.length === 0 && (
                     <div className="empty-search">
-                      <div className="favorites-container">
+                      <div style={{ display: "flex", alignItems: "center" }}>
                         <TitleText>Favoris</TitleText>
-                        <div className="favorites-list">
-                          <RoomHorizontalList roomList={favorites} />
-                        </div>
+                        <img
+                          src={fovorisImage}
+                          alt="Favoris"
+                          style={{
+                            width: "25px",
+                            height: "23px",
+                            marginLeft: "5px",
+                            marginBottom: "-25px",
+                          }}
+                        />
                       </div>
-                      <div className="recent-container">
+                      <div className="favorites-list">
+                        <RoomHorizontalList roomList={favorites} />
+                      </div>
+                      <div style={{ display: "flex", alignItems: "center" }}>
                         <TitleText>Historique</TitleText>
-                        <RoomHorizontalList roomList={rooms} />
+                        <img
+                          src={historiqueImage}
+                          alt="Historique"
+                          style={{
+                            width: "25px",
+                            height: "23px",
+                            marginLeft: "5px",
+                            marginBottom: "-25px",
+                          }}
+                        />
                       </div>
+                      <RoomHorizontalList roomList={rooms} />
                     </div>
                   ))}
               </div>
@@ -65,7 +98,7 @@ export const HomePage = () => {
           </WhiteContainer>
         </div>
         <div className="bottom-bar-home">
-          <BottomBar SelectedPage="Home"/>
+          <BottomBar SelectedPage="Home" />
         </div>
       </div>
     </div>
