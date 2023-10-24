@@ -37,21 +37,21 @@
 .WhiteButtonText {
   color: #808488;
   font-size: 20px;
-  font-family: "Century Gothic";
+  font-family: "CenturyGothic";
   font-weight: bold;
 }
 
 .BlueButtonText {
   color: #ecf0f3;
   font-size: 20px;
-  font-family: "Century Gothic";
+  font-family: "CenturyGothic";
   font-weight: bold;
 }
 
 .TitleText {
   color: #1c2323;
   font-size: 20px;
-  font-family: "Century Gothic";
+  font-family: "CenturyGothic";
   font-weight: bold;
   margin-top: 30px; /* To be removed */
 }
@@ -67,7 +67,7 @@
 .SubtitleText {
   color: #808488;
   font-size: 14px;
-  font-family: "Century Gothic";
+  font-family: "CenturyGothic";
   font-weight: bold;
   margin-top: 30px; /* To be removed */
 }
@@ -75,7 +75,7 @@
 .PlaceholderText {
   color: #929699;
   font-size: 14px;
-  font-family: "Century Gothic";
+  font-family: "CenturyGothic";
   font-weight: italic;
   margin-top: 30px; /* To be removed */
 }
@@ -83,7 +83,7 @@
 .Error {
   color: #f05050;
   font-size: 14px;
-  font-family: "Century Gothic";
+  font-family: "CenturyGothic";
   font-weight: normal;
 }
 
@@ -103,7 +103,7 @@
 
 .DualContainerText {
   color: #6e7276;
-  font-family: Century Gothic;
+  font-family: CenturyGothic;
   font-size: 18px;
   font-style: normal;
   width: 80%;
@@ -121,7 +121,7 @@
 .MetricsOffText {
   color: #6e7276;
   text-align: center;
-  font-family: Century Gothic;
+  font-family: CenturyGothic;
   font-size: 12px;
   font-style: normal;
   display: flex;
@@ -136,7 +136,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
-  font-family: Century Gothic;
+  font-family: CenturyGothic;
   font-size: 12px;
   font-style: normal;
   display: flex;
@@ -169,7 +169,7 @@
 
 .ClassicText {
   color: #1c2323;
-  font-family: Century Gothic;
+  font-family: CenturyGothic;
   font-size: 16px;
   font-style: italic;
 }
@@ -185,7 +185,7 @@
 .WhiteGlassMoText {
   color: #ecf0f3;
   text-align: center;
-  font-family: Century Gothic;
+  font-family: CenturyGothic;
   font-size: 20px;
   font-weight: bold;
 }
@@ -193,7 +193,7 @@
 .BlueGlassMoText {
   color: #1758f1;
   text-align: center;
-  font-family: Century Gothic;
+  font-family: CenturyGothic;
   font-size: 20px;
   font-weight: bold;
 }
@@ -266,14 +266,14 @@
 .BottomBarTextSelected {
   color: #6F7176;
   text-align: center;
-  font-family: Century Gothic;
+  font-family: CenturyGothic;
   font-size: 10px;
   font-style: normal;
 }
 
 .BottomBarTextUnselected {
   color: #6F7176;
-  font-family: Century Gothic;
+  font-family: CenturyGothic;
   font-size: 10px;
   font-style: normal;
 }
@@ -319,13 +319,13 @@
 
 .DirectionSmallText {
   color: #1E1E1E;
-  font-family: Century Gothic;
+  font-family: CenturyGothic;
   font-size: 18px;
 }
 
 .DirectionBigText {
   color: #1C2323;
-  font-family: Century Gothic;
+  font-family: CenturyGothic;
   font-size: 24px;
   font-weight: bold;
 }
