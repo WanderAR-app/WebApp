@@ -1,0 +1,54 @@
+.AR_page {
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+}
+
+.background {
+    background-image: url('https://www.seiu1000.org/sites/main/files/imagecache/hero/main-images/camera_lense_0.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* border-radius: 0px 0px 30px 30px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.upper_pannel {
+    width: 342px;
+    height: 109px;
+    align-self: flex-start;
+    opacity: 0.8;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.9);
+    /* border-radius: 40px 40px 0px 0px; */
+}
+
+.info_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button_right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(0%, -25%);
+    margin-right: 5%;
+}
+
+.button_left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(0%, -25%);
+    margin-left: 5%;
+}
