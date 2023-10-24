@@ -110,9 +110,7 @@ export const TestPage = () => {
         />
       </RoundButton>
       <GlassMoContainer>
-        <ClassicTextTitle>
-          Notre Concept Unique
-        </ClassicTextTitle>
+        <ClassicTextTitle>Notre Concept Unique</ClassicTextTitle>
         <ClassicText>
           Wander AR est une application de guidage en intérieur disponible dans
           les bâtiments utilisant nos services. Les conditions générales
@@ -136,7 +134,7 @@ export const TestPage = () => {
         </WhiteGlassMoButton>
       </GlassMoContainer>
 
-      <BottomBar SelectedPage="Settings"/>
+      <BottomBar SelectedPage="Settings" />
       <RoundButtonClicked>
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
@@ -146,12 +144,8 @@ export const TestPage = () => {
         />
       </RoundButtonClicked>
       <DirectionContainer>
-        <DirectionSmallText>
-          Dans 9 metres
-        </DirectionSmallText>
-        <DirectionBigText>
-          Tournez à droite
-        </DirectionBigText>
+        <DirectionSmallText>Dans 9 metres</DirectionSmallText>
+        <DirectionBigText>Tournez à droite</DirectionBigText>
       </DirectionContainer>
       <SettingContainer
         OnClick={() => {
@@ -168,7 +162,7 @@ export const TestPage = () => {
       <DualContainer>
         <div style={{ display: "flex" }}>
           <DualContainerText>Dual Button</DualContainerText>
-          <SwitchMultiChoice options={['Option 1', 'Option 2', 'Option 3']} />
+          <SwitchMultiChoice options={["Option 1", "Option 2", "Option 3"]} />
         </div>
       </DualContainer>
     </div>

@@ -247,16 +247,16 @@
 .BottomBarButtonUnselected {
   border: none;
   border-radius: 4px;
-  background: #ECF0F3;
-  box-shadow: -2px -2px 5px 0px #FFF, 2px 2px 5px 0px #D1D9E6;
+  background: #ecf0f3;
+  box-shadow: -2px -2px 5px 0px #fff, 2px 2px 5px 0px #d1d9e6;
   padding: 8px;
 }
 
 .BottomBarButtonSelected {
   border: none;
   border-radius: 4px;
-  background: #ECF0F3;
-  box-shadow: -2px -2px 5px 0px #FFF inset, 2px 2px 5px 0px #D1D9E6 inset;
+  background: #ecf0f3;
+  box-shadow: -2px -2px 5px 0px #fff inset, 2px 2px 5px 0px #d1d9e6 inset;
   padding-top: 8px;
   padding-right: 8px;
   padding-bottom: 4px;
@@ -264,7 +264,7 @@
 }
 
 .BottomBarTextSelected {
-  color: #6F7176;
+  color: #6f7176;
   text-align: center;
   font-family: CenturyGothic;
   font-size: 10px;
@@ -272,7 +272,7 @@
 }
 
 .BottomBarTextUnselected {
-  color: #6F7176;
+  color: #6f7176;
   font-family: CenturyGothic;
   font-size: 10px;
   font-style: normal;
@@ -292,8 +292,8 @@
 .DirectionContainer {
   border: none;
   border-radius: 16px;
-  background: #ECF0F3;
-  filter: drop-shadow(-4px -4px 5px #FFF) drop-shadow(4px 4px 5px #D1D9E6);
+  background: #ecf0f3;
+  filter: drop-shadow(-4px -4px 5px #fff) drop-shadow(4px 4px 5px #d1d9e6);
   margin: 16px;
   display: flex;
   flex-direction: row;
@@ -310,21 +310,21 @@
 }
 
 .DirectionIcon {
-  background: linear-gradient(77deg, #1758F1 5.9%, #35D3E1 91.77%), #ECF0F3;
-  filter: drop-shadow(4px 0px 5px #D1D9E6);
+  background: linear-gradient(77deg, #1758f1 5.9%, #35d3e1 91.77%), #ecf0f3;
+  filter: drop-shadow(4px 0px 5px #d1d9e6);
   border: none;
   border-radius: 16px 0px 0px 16px;
   padding: 16px;
 }
 
 .DirectionSmallText {
-  color: #1E1E1E;
+  color: #1e1e1e;
   font-family: CenturyGothic;
   font-size: 18px;
 }
 
 .DirectionBigText {
-  color: #1C2323;
+  color: #1c2323;
   font-family: CenturyGothic;
   font-size: 24px;
   font-weight: bold;
@@ -335,9 +335,7 @@
   align-items: center;
   border-radius: 8px;
   background: #ecf0f3;
-  box-shadow:
-    -4px -4px 5px 0px #fff,
-    4px 4px 5px 0px #d1d9e6;
+  box-shadow: -4px -4px 5px 0px #fff, 4px 4px 5px 0px #d1d9e6;
   padding: 12px 24px;
   width: 70%;
   text-align: left;
@@ -354,9 +352,7 @@
 .DualButtonMultiChoice {
   border-radius: 30px;
   background: #ecf0f3;
-  box-shadow:
-    -4px -4px 5px 0px #fff inset,
-    4px 4px 5px 0px #d1d9e6 inset;
+  box-shadow: -4px -4px 5px 0px #fff inset, 4px 4px 5px 0px #d1d9e6 inset;
   border: none;
   padding: 8px 45px;
   cursor: pointer;

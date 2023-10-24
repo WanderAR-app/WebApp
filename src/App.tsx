@@ -36,7 +36,7 @@ function App() {
         posX: 0,
         posY: 0,
         geometry: "",
-        userFavorite: (i % 2) === 0,
+        userFavorite: i % 2 === 0,
         imageURL: `https://picsum.photos/1600/1200?random=${i}`,
       });
     }

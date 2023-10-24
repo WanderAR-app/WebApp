@@ -21,19 +21,6 @@ export const BrowserRouter = createBrowserRouter([
     path: "/",
     element: <HomePage />,
     errorElement: <ErrorPage />,
-    children: [
-      // test page route
-      {
-        path: "/test",
-        element: <TestPage />,
-      },
-
-      // 404 page route
-      {
-        path: "*",
-        element: <ErrorPage />,
-      },
-    ],
   },
 
   {
