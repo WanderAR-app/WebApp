@@ -19,7 +19,7 @@ export const BrowserRouter = createBrowserRouter([
   // base path route
   {
     path: "/",
-    element: <TestPage />,
+    element: <HomePage />,
     errorElement: <ErrorPage />,
     children: [
       // test page route
@@ -39,19 +39,19 @@ export const BrowserRouter = createBrowserRouter([
   {
     path: "/search",
     element: <SearchPage />,
-    errorElement: <ErrorPage />
+    errorElement: <ErrorPage />,
   },
 
   {
     path: "/ar",
     element: <ArPage />,
-    errorElement: <ErrorPage />
+    errorElement: <ErrorPage />,
   },
 
   {
     path: "/test",
     element: <TestPage />,
-    errorElement: <ErrorPage />
+    errorElement: <ErrorPage />,
   },
 
   // Login page route
