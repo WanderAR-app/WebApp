@@ -1,0 +1,75 @@
+.home-page {
+  margin: 0;
+  padding: 0;
+  background-image: url("../assets/back.svg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.title-container-home {
+  width: 50vw;
+  height: 35vh;
+  overflow-y: auto;
+  margin-top: -50vh;
+  text-align: center;
+}
+
+.button-container-home {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  max-width: 400px;
+  margin-top: 5%;
+  bottom: -2%;
+}
+
+.glass-container-home {
+  width: 100vw;
+  height: 50%;
+  top: 195px;
+  left: 5vw;
+  overflow-y: auto;
+}
+
+.hidden-button {
+  background-color: white;
+  border: none;
+  width: 100%;
+  display: flex;
+}
+
+.title-home {
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.title-home img {
+  width: 25px;
+  height: 23px;
+  margin-left: 5px;
+  margin-bottom: -23px; /* Adjust this value for proper alignment */
+}
+
+.bottom-bar-home {
+  position: fixed;
+  bottom: 10px;
+  left: 0;
+  text-align: center;
+}

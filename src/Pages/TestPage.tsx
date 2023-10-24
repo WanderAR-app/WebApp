@@ -27,6 +27,10 @@ import RoundButtonClicked from "../Components/Button/RoundButtonClicked";
 import DirectionContainer from "../Components/Container/DireactionContainer";
 import DirectionSmallText from "../Components/Text/DirectionSmallText";
 import DirectionBigText from "../Components/Text/DirectionBigText";
+import SettingContainer from "../Components/Container/SettingContainer";
+import ClassicTextTitle from "../Components/Text/ClassicTextTitle";
+import DetailText from "../Components/Text/DetailText";
+import SwitchMultiChoice from "../Components/Switch/SwitchMultiChoice";
 
 export const TestPage = () => {
   const [value, setValue] = useState("");
@@ -36,7 +40,7 @@ export const TestPage = () => {
   };
 
   return (
-    <div>
+    <div className="test-page">
       <WhiteButton
         OnClick={() => {
           console.log("WhiteButton click");
@@ -63,6 +67,7 @@ export const TestPage = () => {
         />
       </IconButton>
       <TitleText>Title Text</TitleText>
+      <DetailText>Detail Text</DetailText>
       <SubtitleText>Subtitle Text</SubtitleText>
       <PlaceholderText>Placeholder Text</PlaceholderText>
       <InputText
@@ -105,6 +110,7 @@ export const TestPage = () => {
         />
       </RoundButton>
       <GlassMoContainer>
+        <ClassicTextTitle>Notre Concept Unique</ClassicTextTitle>
         <ClassicText>
           Wander AR est une application de guidage en intérieur disponible dans
           les bâtiments utilisant nos services. Les conditions générales
@@ -128,7 +134,7 @@ export const TestPage = () => {
         </WhiteGlassMoButton>
       </GlassMoContainer>
 
-      <BottomBar SelectedPage="Settings"/>
+      <BottomBar SelectedPage="Settings" />
       <RoundButtonClicked>
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
@@ -138,13 +144,27 @@ export const TestPage = () => {
         />
       </RoundButtonClicked>
       <DirectionContainer>
-        <DirectionSmallText>
-          Dans 9 metres
-        </DirectionSmallText>
-        <DirectionBigText>
-          Tournez à droite
-        </DirectionBigText>
+        <DirectionSmallText>Dans 9 metres</DirectionSmallText>
+        <DirectionBigText>Tournez à droite</DirectionBigText>
       </DirectionContainer>
+      <SettingContainer
+        OnClick={() => {
+          console.log("SettingContainer click");
+        }}
+      >
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
+          alt="Google"
+          height={30}
+        />
+        <DualContainerText> Dual Container </DualContainerText>{" "}
+      </SettingContainer>
+      <DualContainer>
+        <div style={{ display: "flex" }}>
+          <DualContainerText>Dual Button</DualContainerText>
+          <SwitchMultiChoice options={["Option 1", "Option 2", "Option 3"]} />
+        </div>
+      </DualContainer>
     </div>
   );
 };

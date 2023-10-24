@@ -1,0 +1,53 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.button-back-policy {
+  position: absolute;
+  top: 2%;
+  left: 9%;
+  z-index: 1
+}
+
+.title-policy {
+  margin-top: -45px;
+  z-index: 1;
+  margin-left: 30px;
+}
+
+.button-container-policy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: -20px;
+}
+
+.glass-container-policy {
+  width: 90vw;
+  height: 700px;
+  top: 195px;
+  left: 5vw;
+  overflow-y: auto;
+  margin-top: -20px;
+}
+
+.texte-container-policy {
+  line-height: 1.5;
+  padding: 10px;
+  text-align: left;
+  margin-top: -30px;
+}
+
+.bottom-bar-policy {
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  text-align: center;
+}

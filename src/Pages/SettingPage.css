@@ -1,0 +1,14 @@
+body {
+  background-color: white;
+}
+
+.title-setting {
+  margin-top: -380px;
+}
+
+.bottom-bar-setting {
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  text-align: center;
+}
