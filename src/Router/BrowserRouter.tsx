@@ -13,6 +13,7 @@ import { NavigationPage } from "../Pages/NavigationPage";
 import { PolicyPage } from "../Pages/PolicyPage";
 import { ProposPage } from "../Pages/ProposPage";
 import { HomePage } from "../Pages/HomePage";
+import { ArPage } from "../Pages/ArPage";
 
 export const BrowserRouter = createBrowserRouter([
   // base path route
@@ -38,6 +39,12 @@ export const BrowserRouter = createBrowserRouter([
   {
     path: "/search",
     element: <SearchPage />,
+    errorElement: <ErrorPage />
+  },
+
+  {
+    path: "/ar",
+    element: <ArPage />,
     errorElement: <ErrorPage />
   },
 
