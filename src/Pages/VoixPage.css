@@ -1,0 +1,60 @@
+.container {
+    position: relative;
+    min-height: 100vh;
+}
+
+.button-back-voix {
+    position: absolute;
+    top: 2%;
+    left: 9%;
+}
+
+.title-voix {
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.detail-voix {
+    position: absolute;
+    top: calc(4% + 2.5rem);
+    left: 25%;
+    transform: translateX(-50%);
+    max-width: 90%;
+}
+
+.container-voix {
+    position: absolute;
+    width: 100%;
+    top: 15%;
+    left: 10%;
+    max-width: 100%;
+}
+
+.container-text-voix {
+    margin-left: -1%;
+}
+
+.detail-2-voix {
+    position: absolute;
+    left: 29%;
+    transform: translateX(-50%);
+    max-width: 90%;
+    top: 30%;
+}
+
+.container-2-voix {
+    position: absolute;
+    width: 100%;
+    top: 35%;
+    left: 10%;
+    max-width: 100%;
+}
+
+.bottom-bar-voix {
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    text-align: center;
+}

@@ -22,7 +22,14 @@ export const SearchBar = ({
     type === "search" ? (
       <BsSearch id="left-icon" />
     ) : (
-      <AiOutlineLeft id="left-icon " onClick={() => void 0} />
+      <AiOutlineLeft
+        id="left-icon"
+        onClick={() => {
+          if (window.location.pathname !== '/home') {
+            window.location.href = '/home';
+          }
+        }}
+      />
     );
 
   const fetchData = (value: any) => {

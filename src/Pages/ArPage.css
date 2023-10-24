@@ -1,6 +1,7 @@
 .AR_page {
     display: flex;
     flex-direction: column;
+    overflow-y: hidden;
 }
 
 .background {
@@ -18,7 +19,7 @@
     width: 342px;
     height: 109px;
     align-self: flex-start;
-    /* opacity: 0.7; */
+    opacity: 0.9;
 }
 
 .footer {
