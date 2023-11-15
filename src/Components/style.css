@@ -379,3 +379,16 @@
   padding-top: 10px;
   padding-bottom: 90px;
 }
+
+.WelcomeContainer {
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 1);
+  background: linear-gradient(
+    113deg,
+    rgba(255, 255, 255, 0.9) 5.38%,
+    rgba(255, 255, 255, 0.3) 94.4%
+  );
+  backdrop-filter: blur(7.5px);
+  width: 223px;
+  height: 108px;
+}

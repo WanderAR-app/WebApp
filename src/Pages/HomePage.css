@@ -17,11 +17,23 @@
 }
 
 .title-container-home {
-  width: 50vw;
-  height: 35vh;
-  overflow-y: auto;
-  margin-top: -50vh;
+  margin-top: -70vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+}
+
+.DetailText {
+  font-weight: 500;
+}
+
+.DetailText span {
+  display: block;
+}
+
+.TitleText {
+  margin-top: 2px;
 }
 
 .button-container-home {
@@ -40,7 +52,6 @@
 
 .glass-container-home {
   width: 100vw;
-  height: 50%;
   top: 195px;
   left: 5vw;
   overflow-y: auto;
@@ -54,7 +65,8 @@
 }
 
 .title-home {
-  margin-top: 0;
+  position: relative;
+  top: 10px;
   display: flex;
   align-items: center;
   margin-bottom: 20px;
@@ -64,7 +76,6 @@
   width: 25px;
   height: 23px;
   margin-left: 5px;
-  margin-bottom: -23px; /* Adjust this value for proper alignment */
 }
 
 .bottom-bar-home {
@@ -72,4 +83,12 @@
   bottom: 10px;
   left: 0;
   text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+  .glass-container-home {
+    width: 90vw;
+    top: 150px;
+    left: 5vw;
+  }
 }

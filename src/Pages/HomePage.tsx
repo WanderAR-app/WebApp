@@ -10,7 +10,7 @@ import { RoomHorizontalList } from "../Components/List/RoomHorizontalList";
 import { AppContext } from "../Context/AppContext";
 import TitleText from "../Components/Text/TitleText";
 import { useNavigate } from "react-router-dom";
-import GlassMoContainer from "../Components/Container/GlassMoContainer";
+import WelcomeContainer from "../Components/Container/WelcomeContainer";
 import DetailText from "../Components/Text/DetailText";
 
 import favorisImage from "../assets/favoris.svg";
@@ -38,12 +38,12 @@ export const HomePage = () => {
     <div className="home-page">
       <div className="container">
         <div className="title-container-home">
-          <GlassMoContainer>
-            <DetailText>Bienvenue à</DetailText>
+          <WelcomeContainer>
+            <DetailText>Bienvenue <span>à</span></DetailText>
             <TitleText>Epitech</TitleText>
-          </GlassMoContainer>
+          </WelcomeContainer>
         </div>
-        <div className="button-container-home">
+         <div className="button-container-home">
           <WhiteContainer>
             <div className="glass-container-home">
               <div className="search-bar-container">
