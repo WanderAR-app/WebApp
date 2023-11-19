@@ -1,0 +1,96 @@
+.register-page {
+  position: relative;
+  height: 100vh;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+.background-vector9 {
+  background-image: url('../assets/Vector9.svg');
+}
+
+.background-vector8 {
+  background-image: url('../assets/Vector8.svg');
+}
+
+.background-vector7 {
+  background-image: url('../assets/Vector7.svg');
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  margin-bottom: 50px;
+}
+
+.glass-container-register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80vw;
+  max-width: 600px;
+  height: auto;
+  left: 5vw;
+  overflow-y: auto;
+  margin-top: 90px;
+}
+
+.title-container-register {
+  text-align: center;
+  position: relative;
+  top: -10px;
+  margin-left: -55px;
+}
+
+.logo-container-register {
+  text-align: center;
+  position: relative;
+  top: -30px;
+  margin-left: -30px;
+  z-index: 2;
+}
+
+.email-register {
+  position: relative;
+  top: -40px;
+  margin-left: -30px;
+}
+
+.password-register {
+  position: relative;
+  top: -60px;
+  margin-left: -30px;
+}
+
+.confirm-password-register {
+  position: relative;
+  top: -80px;
+  margin-left: -30px;
+}
+
+.button-row-register {
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: -50px;
+  margin-left: -30px;
+}
+
+.blue-button-register,
+.white-button-register {
+  flex: 1;
+  margin: 5px;
+}

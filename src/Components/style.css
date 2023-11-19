@@ -379,3 +379,12 @@
   padding-top: 10px;
   padding-bottom: 90px;
 }
+
+.LogRegContainer {
+  border-radius: 16px;
+  /* border: 1px solid rgba(255, 255, 255, 1); */
+  background: transparent;
+  padding: 24px;
+  margin: 5%;
+  padding-bottom: 90px;
+}
