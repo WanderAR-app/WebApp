@@ -3,6 +3,17 @@ import "../style.css";
 import styled from "styled-components";
 import "./Loading.css";
 
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+const Logo = styled.img`
+  width: 50px;
+  height: 50px;
+`;
+
 const Title = styled.h2 `
 color: #808488;
 font-size: 20px;
@@ -20,10 +31,13 @@ font-weight: bold;
 
 const Loading = () => {
   return (
-        <div className="progress">
-            <div className="color"></div>
-            <Title>Loading ...</Title>
-        </div>
+    <Container>
+      <Logo src="/WanderAR.svg" alt="WanderAR" />
+      <div className="progress">
+        <div className="color"></div>
+          <Title>Loading ...</Title>
+      </div>
+    </Container>
   );
 };
 export default Loading;

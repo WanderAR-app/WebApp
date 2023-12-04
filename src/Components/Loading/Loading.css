@@ -6,7 +6,6 @@ body{
     background-color: #d8d8d8;
 }
 .progress{
-    position: relative;
     height: 10px;
     width: 110%;
     border: 7px solid #1758f1;
@@ -14,7 +13,6 @@ body{
 
 }
 .progress .color{
-    position: absolute;
     background-color: #35D3E1;
     width: 0px;
     height: 10px;
